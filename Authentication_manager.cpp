@@ -109,6 +109,10 @@ void login()
 	system("CLS");
 	string user, pass, user_f, pass_f;
 	char choice;
+	//Login header
+	cout << setw(65) << "|" << setw(35) << setfill('-') << "-" << "|" << setfill(' ') << endl;
+	cout << setw(65) << "|" << "\t\tLOGIN \t " << setw(13) << " | " << endl;
+	cout << setw(65) << "|" << setw(35) << setfill('-') << "-" << "|" << setfill(' ') << endl;
 	//Inputting username and password from user
 	cout << setw(85) << "Username:";
 	cin >> user;
@@ -163,6 +167,10 @@ void sign_up()
 	fstream file;
 	file.open("users.txt", ios::out | ios::app);
 
+
+	cout << setw(65) << "|" << setw(35) << setfill('-') << "-" << "|" << setfill(' ') << endl;
+	cout << setw(65) << "|" << "\t\tSign Up\t " << setw(13) << " | " << endl;
+	cout << setw(65) << "|" << setw(35) << setfill('-') << "-" << "|" << setfill(' ') << endl;
 
 	cout << setw(85) << "Username:";
 	cin.ignore();
